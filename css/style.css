@@ -1,0 +1,264 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+/* ------common Css------ */
+body{
+	font-family: 'Lato', sans-serif;
+}
+img{
+	width: 100%; /*div onujayi alwz 100% thakbe eta korle bar bar img k responsive kora lgbe na*/
+	height: auto;
+}
+a:hover{
+	text-decoration: none;
+}
+.strict-sec-title{
+	text-align: center;
+	padding-bottom: 25px;
+}
+.strict-sec-title h2{
+	color:#2d3950;
+	font-size: 35px;
+}
+p{
+	color:#999999;
+	font-size: 15px;
+}
+
+/* ------header Css------ */
+
+.strict-header{
+	background-color: #f6f9f9;
+	padding: 30px 0;
+}
+.menu-icon{
+	color: #454444;
+	display: none;   
+}
+.strict-menu li a{
+	text-transform: capitalize;
+	display: block;
+	font-family: 'Oswald', sans-serif; 
+	color:#454444;
+	font-weight: 700;
+	padding: 10px 25px;
+	transition: .5s;
+}
+.strict-menu li a:hover{
+	color: #15a4fa;
+}
+
+/* ------banner Css------ */
+
+.strict-banner{
+	background-image: url(../img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding: 100px 0 20px;
+}
+.strict-banner-text{}
+.strict-banner-text h1{
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 80px;
+	padding-bottom: 30px;
+}
+.strict-banner-text span{
+	color: #fff;
+	font-size: 15px;
+	border-top: 1px solid #15a4fa;
+	padding: 30px 20px 0;
+	display: inline-block;
+}
+.strict-banner-button{
+	padding: 60px 0;
+}
+.strict-banner-button a{
+	color:#fff;
+	border: 1px solid #15a4fa;
+	padding: 12px 40px;
+	border-radius: 5px;
+	transition: .5s;
+}
+.strict-banner-button a:hover{
+	background-color:  #15a4fa;
+	
+}
+.strict-banner-button i{
+	margin-top: 150px;
+	display: block; 
+	color: #fff;
+}
+/* ------about Css------ */
+.strict-about{
+	background-color: #f6f9f9;
+	padding: 80px 0;
+	text-align: center;	
+}
+.strict-about p{
+	font-size: 20px;
+}
+/* ------service Css------ */
+
+.strict-service{
+	background-color: #fff;
+	padding: 80px 0;
+}
+.strict-ser-content{
+	text-align: center;
+}
+.strict-ser-icon{
+	background: linear-gradient(to right, #48baff 50% ,#5fc3ff 50%);
+	height: 50px;
+	width: 50px;
+	margin: 0 auto; /*width height set kore dewar karon e eta puro div tar width height hoye jay tai oi div ta onujayi icon ta majhe ane puro div ta majhe anar jonno tai eta use kora hoise*/	
+	/*icon take majhe anar jonno nicher 3 ta property use hoise*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.strict-ser-icon i{
+	color: #fff;
+	font-size: 20px;
+
+}
+.strict-ser-text{}
+.strict-ser-text h4{
+	font-size: 22px;
+}
+/* ------portfolio Css------ */
+.strict-portfolio{
+	padding: 80px 0;
+	background-color: #f6f9f9;
+}
+.strict-port-img{
+	position: relative;
+	margin-bottom: 30px;
+}
+.strict-port-overlay{
+	background-color: rgba(21, 164, 250, 0.9);
+	position: absolute; /*khata part-4*/
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	/*nicher 3 ta property use korle tar child gula majhe ashbe*/
+	/*i er div ta orthat ul k majhe anar jonno*/
+	display: flex; /*21 min part-4*/
+	justify-content: center;
+	align-items: center;
+	opacity: 0; /*overlay take jeno dekha na jay ejonno opacity:0 korlam*/
+	transition: .5s;
+}
+.strict-port-overlay ul{
+	padding: 0;
+	display: flex;
+	list-style: none;
+}
+.strict-port-overlay li{}
+.strict-port-overlay ul li{
+	border: 1px solid #fff;
+	height: 35px;
+	width: 35px;
+	/*icon gula majhe anar jonno i er parent k ei 3 ta property use korlam*/
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	margin: 0 3px;
+}
+.strict-port-overlay i{
+	color: #fff;
+}
+.strict-port-img:hover .strict-port-overlay{
+	opacity: 1;
+}
+/* ------Contact Css------ */
+.strict-contact{
+	background-image: url(../img/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+} 
+.strict-contact .strict-sec-title h2{
+	color: #fff;
+}
+.strict-contact-overlay{
+	padding: 80px 0;
+	background-color: rgba(45, 57, 80, 0.9);
+}
+.strict-contact-form{}
+
+.strict-contact-form .form-group input,
+.strict-contact-form .form-group textarea{
+	background-color: transparent;
+	border: 1px solid #999999;
+}
+.strict-form-bottom{
+	overflow: hidden;
+}
+.strict-form-left{
+	float: left;
+}
+.strict-form-left input{
+	margin-right: 5px;
+}
+.strict-form-left label{
+	color: #fff;
+}
+.strict-form-right{
+	float: right;
+}
+.strict-form-right input{
+	color:#fff;
+	border: 1px solid #15a4fa;
+	padding: 3px 30px;
+	background-color: transparent;
+	border-radius: 3px;
+	transition: .5s;
+}
+.strict-form-right input:hover{
+	background-color: #15a4fa;
+}
+/* ------footer Css------ */
+.strict-footer{
+	padding: 20px 0;
+	background-color: #f6f9f9;
+}
+.strict-copyright {}
+.strict-footer p{
+	margin:0;
+}
+.strict-social-network{}
+.strict-social-network ul{	
+	margin:0;
+}
+.strict-social-network ul li{
+	height: 35px;
+	width: 35px;
+	background-color: #15a4fa; 
+	margin: 0 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.strict-social-network ul li a{
+	color:#fff;
+}
+
+/* arrow top*/
+
+.arrow-top{
+	color:#15a4fa;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 5px 10px;
+	font-size: 25px;
+	border-radius: 5px;
+	display: none;
+}

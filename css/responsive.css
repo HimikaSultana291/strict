@@ -1,0 +1,35 @@
+@media (max-width: 768px){
+
+	.strict-header{
+		position: relative;
+	}
+	.menu-icon{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu-icon i{
+		padding: 10px;
+		font-size: 25px;
+		cursor: pointer;
+	}
+	.strict-menu{
+		position: absolute;
+		top:100%; /* header  er top theke 100% tai header k position relative korsi upore*/
+		left: 0;
+		width: 100%;
+		background-color: rgba(0,0,0,0.7);
+		display: none;
+		border-top: 2px solid  #15a4fa;
+	}
+	.strict-menu ul{
+		display: block;
+	}
+	.strict-menu li a{
+		color: #fff;
+	}
+	.strict-header .col-8{
+		position: static; /*bootstrap age theke col k position relative kore rkhe tai ekhan e static kore dilam jeno menu ta ekdom left nd top the suru hote pare*/
+
+	}
+
+}
